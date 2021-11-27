@@ -1,0 +1,39 @@
+{
+  "root": "libs/coinbase-http",
+  "sourceRoot": "libs/coinbase-http/src",
+  "projectType": "library",
+  "targets": {
+    "run": {
+      "executor": "@nrwl/workspace:run-script",
+      "options": {
+        "script": "run"
+      }
+    },
+    "build": {
+      "executor": "@nrwl/workspace:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/coinbase-http",
+        "main": "libs/coinbase-http/src/index.ts",
+        "tsConfig": "libs/coinbase-http/tsconfig.lib.json",
+        "assets": ["libs/coinbase-http/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/coinbase-http/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/coinbase-http"],
+      "options": {
+        "jestConfig": "libs/coinbase-http/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
