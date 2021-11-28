@@ -1,14 +1,15 @@
 module.exports = {
-  displayName: 'coinbase-http',
+  displayName: 'sign-request',
   preset: '../../jest.preset.js',
   globals: {
     'ts-jest': {
       tsconfig: '<rootDir>/tsconfig.spec.json',
     },
   },
+  testEnvironment: 'node',
   transform: {
     '^.+\\.[tj]sx?$': 'ts-jest',
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  coverageDirectory: '../../coverage/libs/coinbase-http',
+  coverageDirectory: '../../coverage/libs/sign-request',
 };

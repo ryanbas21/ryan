@@ -7,16 +7,19 @@
     "moduleResolution": "Node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "incremental": true,
+    "tsBuildInfoFile": ".tsbuildinfo",
     "importHelpers": true,
-    "target": "ESNext",
+    "target": "ES6",
     "module": "CommonJS",
     "lib": ["es2017", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@ryan/coinbase-http": ["libs/coinbase-http/src/index.ts"],
-      "@ryan/env": ["libs/env/src/index.ts"]
+      "@ryan/coinbase-request": ["libs/coinbase-request/src/index.ts"],
+      "@ryan/env": ["libs/env/src/index.ts"],
+      "@ryan/sign-request": ["libs/sign-request/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

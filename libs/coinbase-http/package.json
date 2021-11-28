@@ -1,7 +1,0 @@
-{
-  "name": "@ryan/coinbase-http",
-  "version": "0.0.1",
-  "scripts": {
-    "run": "node ../../dist/libs/coinbase-http/src/lib/coinbase-http.js"
-  }
-}

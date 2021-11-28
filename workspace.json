@@ -1,7 +1,9 @@
 {
   "version": 2,
   "projects": {
-    "coinbase-http": "libs/coinbase-http",
-    "env": "libs/env"
+    "coinbase-request": "libs/coinbase-request",
+    "env": "libs/env",
+    "sign-request": "libs/sign-request",
+    "transactions": "apps/transactions"
   }
 }
